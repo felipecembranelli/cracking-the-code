@@ -1,4 +1,0 @@
-/home/felipe/projects/personal/cracking-the-coding/dataStructures/obj/Debug/netcoreapp2.2/datastructures.csproj.AssemblyReference.cache
-/home/felipe/projects/personal/cracking-the-coding/dataStructures/obj/Debug/netcoreapp2.2/datastructures.AssemblyInfoInputs.cache
-/home/felipe/projects/personal/cracking-the-coding/dataStructures/obj/Debug/netcoreapp2.2/datastructures.AssemblyInfo.cs
-/home/felipe/projects/personal/cracking-the-coding/dataStructures/obj/Debug/netcoreapp2.2/datastructures.csproj.CoreCompileInputs.cache
