@@ -1,0 +1,16 @@
+/home/felipe/projects/personal/cracking-the-coding/dataStructures/obj/Debug/netcoreapp5.0/datastructures.csproj.AssemblyReference.cache
+/home/felipe/projects/personal/cracking-the-coding/dataStructures/obj/Debug/netcoreapp5.0/datastructures.GeneratedMSBuildEditorConfig.editorconfig
+/home/felipe/projects/personal/cracking-the-coding/dataStructures/obj/Debug/netcoreapp5.0/datastructures.AssemblyInfoInputs.cache
+/home/felipe/projects/personal/cracking-the-coding/dataStructures/obj/Debug/netcoreapp5.0/datastructures.AssemblyInfo.cs
+/home/felipe/projects/personal/cracking-the-coding/dataStructures/obj/Debug/netcoreapp5.0/datastructures.csproj.CoreCompileInputs.cache
+/home/felipe/projects/personal/cracking-the-coding/dataStructures/bin/Debug/netcoreapp5.0/datastructures
+/home/felipe/projects/personal/cracking-the-coding/dataStructures/bin/Debug/netcoreapp5.0/datastructures.deps.json
+/home/felipe/projects/personal/cracking-the-coding/dataStructures/bin/Debug/netcoreapp5.0/datastructures.runtimeconfig.json
+/home/felipe/projects/personal/cracking-the-coding/dataStructures/bin/Debug/netcoreapp5.0/datastructures.runtimeconfig.dev.json
+/home/felipe/projects/personal/cracking-the-coding/dataStructures/bin/Debug/netcoreapp5.0/datastructures.dll
+/home/felipe/projects/personal/cracking-the-coding/dataStructures/bin/Debug/netcoreapp5.0/ref/datastructures.dll
+/home/felipe/projects/personal/cracking-the-coding/dataStructures/bin/Debug/netcoreapp5.0/datastructures.pdb
+/home/felipe/projects/personal/cracking-the-coding/dataStructures/obj/Debug/netcoreapp5.0/datastructures.dll
+/home/felipe/projects/personal/cracking-the-coding/dataStructures/obj/Debug/netcoreapp5.0/ref/datastructures.dll
+/home/felipe/projects/personal/cracking-the-coding/dataStructures/obj/Debug/netcoreapp5.0/datastructures.pdb
+/home/felipe/projects/personal/cracking-the-coding/dataStructures/obj/Debug/netcoreapp5.0/datastructures.genruntimeconfig.cache

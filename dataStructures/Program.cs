@@ -9,12 +9,34 @@ namespace algo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello data structures exercises !");
+            var userInput = 0;
 
-            // Stack
-            // Queue
-            // Linked List
-            // Hashtable
+            do
+            {
+                var option = MainMenu();
+
+                switch (option)
+                {
+                    case 1:
+                        LinkedList.Run();
+                        break;
+                    case 2:
+                        //RemoveWhitespace();
+                        break;
+                    case 3:
+                        break;
+                    default:
+                        return;
+                }
+            } while(userInput!=5);
+
+           
+        }
+
+        private static int MainMenu()
+        {
+
+            Console.WriteLine("Hello data structures exercises !");
 
             Console.Clear();
             Console.WriteLine("Choose an option:");
@@ -22,21 +44,15 @@ namespace algo
             Console.WriteLine("2) Stack");
             Console.WriteLine("3) Queue");
             Console.WriteLine("4) Hashtable");
-            Console.Write("\r\nSelect an option: ");
+            Console.WriteLine("5) Exit");
+
+            Console.WriteLine("\r\nSelect an option: ");
+
+            var option = Console.ReadLine();
         
-            switch (Console.ReadLine())
-            {
-                case "1":
-                    ReverseString();
-                    return true;
-                case "2":
-                    RemoveWhitespace();
-                    return true;
-                case "3":
-                    return false;
-                default:
-                    return true;
-            }
+            return Convert.ToInt32(option);
+
+            
         }
 
         /// <summary> 
@@ -44,16 +60,16 @@ namespace algo
         /// </summary> 
         /// <param name="result"></param> 
         /// <param name="counter"></param> 
-        public static void DisplayResult(int[] result, int counter, int arraySize)
-        {
-            if (result == null) return;
+        // public static void DisplayResult(int[] result, int counter, int arraySize)
+        // {
+        //     if (result == null) return;
 
-            Console.WriteLine("Test Case: " + result[0] + "," + result[1] + " - timecomplexity:" + (timeComplexity) + " - interactions:" + counter);
+        //     Console.WriteLine("Test Case: " + result[0] + "," + result[1] + " - timecomplexity:" + (timeComplexity) + " - interactions:" + counter);
 
-            timeComplexity = 0;
+        //     timeComplexity = 0;
 
-            Console.WriteLine("================================================");
-        }
+        //     Console.WriteLine("================================================");
+        // }
 
 
 
