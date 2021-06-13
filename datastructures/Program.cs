@@ -18,17 +18,17 @@ namespace algo
                 switch (option)
                 {
                     case 1:
-                        LinkedList.Run();
+                        FrameworkLinkedList.Run();
                         break;
                     case 2:
-                        //RemoveWhitespace();
+                        //MyDataStructure.LinkedList. //RemoveWhitespace();
                         break;
                     case 3:
                         break;
                     default:
                         return;
                 }
-            } while(userInput!=5);
+            } while(userInput!=99);
 
            
         }
@@ -40,11 +40,12 @@ namespace algo
 
             Console.Clear();
             Console.WriteLine("Choose an option:");
-            Console.WriteLine("1) Linked List");
-            Console.WriteLine("2) Stack");
-            Console.WriteLine("3) Queue");
-            Console.WriteLine("4) Hashtable");
-            Console.WriteLine("5) Exit");
+            Console.WriteLine("1) Linked List (Dotnet)");
+            Console.WriteLine("2) Linked List (Basic Custom)");
+            Console.WriteLine("3) Stack");
+            Console.WriteLine("4) Queue");
+            Console.WriteLine("5) Hashtable");
+            Console.WriteLine("99) Exit");
 
             Console.WriteLine("\r\nSelect an option: ");
 

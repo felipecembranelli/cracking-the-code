@@ -2,7 +2,7 @@ using System;
 using System.Text;
 using System.Collections.Generic;
 
-public class LinkedList
+public class FrameworkLinkedList
 {
     public static void Run()
     {
@@ -10,6 +10,7 @@ public class LinkedList
         string[] words =
             { "the", "fox", "jumps", "over", "the", "dog" };
         LinkedList<string> sentence = new LinkedList<string>(words);
+
 
         Display(sentence, "The linked list values:");
 
