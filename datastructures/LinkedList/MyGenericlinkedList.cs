@@ -3,21 +3,21 @@ using System.Linq;
 
 namespace MyDataStructure
 {
-    public class Node
+    public class Node<T>
     {
-        public object data { get; set; }
-        public Node next { get; set; }
+        public T data { get; set; }
+        public Node<T> next { get; set; }
 
     }
 
-    public class LinkedList
+    public class LinkedList<T>
     {
-        private Node head;
+        private Node<T> head;
 
-        public List<object> GetAllNodes()
+        public List<Node<T>> GetAllNodes()
         {
-            Node current = head;
-            var list = new List<object>();
+            Node<T> current = head;
+            var list = new List<Node<T>>();
 
             while (current != null)
             {
@@ -28,9 +28,9 @@ namespace MyDataStructure
             return list;
         }
 
-        public void AddLast(object data) 
+        public void AddLast(T data) 
         {
-            var node = new Node {
+            var node = new Node<T> {
                 data = data,
             };
 
@@ -51,9 +51,9 @@ namespace MyDataStructure
             }
         }
 
-        public void AddFirst(object data) 
+        public void AddFirst(T data) 
         {
-            var node = new Node {
+            var node = new Node<T> {
                 data = data,
             };
 
@@ -70,10 +70,10 @@ namespace MyDataStructure
             }
         }
 
-        public void AddBefore(Node node, object data) 
+        public void AddBefore(Node<T> node, T data) 
         {
-            Node current = head;
-            Node previous = null;
+            Node<T> current = head;
+            Node<T> previous = null;
 
             while (current != null)
             {
@@ -92,9 +92,9 @@ namespace MyDataStructure
             }
         }
 
-        public void AddAfter(Node node, object data) 
+        public void AddAfter(Node<T> node, T data) 
         {
-            Node current = head;
+            Node<T> current = head;
 
             while (current != null)
             {
@@ -111,14 +111,14 @@ namespace MyDataStructure
                 }
             }
         }
-        public Node GetNodeByValue(object data) 
+        public Node<T> GetNodeByValue(T data) 
         {
-            Node current = head;
-            Node selectedNode = null;
+            Node<T> current = head;
+            Node<T> selectedNode = null;
 
             while (current != null)
             {
-                object currentData = current.data;
+                T currentData = current.data;
 
                 if (currentData.Equals(data)) 
                 {
@@ -131,14 +131,14 @@ namespace MyDataStructure
             return selectedNode;
         }
 
-        public int GetNodeIndexByValue(object data) 
+        public int GetNodeIndexByValue(T data) 
         {
-            Node current = head;
+            Node<T> current = head;
             int index = 0;
 
             while (current != null)
             {
-                object currentData = current.data;
+                T currentData = current.data;
 
                 if (!currentData.Equals(data)) 
                 {
@@ -156,7 +156,7 @@ namespace MyDataStructure
         }
         public int Count() 
         {
-            Node current = head;
+            Node<T> current = head;
             int count = 0;
 
             while (current != null)
