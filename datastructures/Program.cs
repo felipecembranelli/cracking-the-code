@@ -25,6 +25,9 @@ namespace algo
                         break;
                     case 3:
                         break;
+                    case 5:
+                        MyDataStructure.FrameworkHashTable.Run();
+                        break;                        
                     default:
                         return;
                 }

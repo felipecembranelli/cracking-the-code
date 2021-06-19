@@ -140,11 +140,11 @@ namespace MyDataStructure
             {
                 T currentData = current.data;
 
-                if (!currentData.Equals(data)) 
-                {
-                    current = current.next;
-                    index++;
-                }
+                if (currentData.Equals(data)) 
+                    break;
+
+                current = current.next;
+                index++;
             }
 
             return index;
