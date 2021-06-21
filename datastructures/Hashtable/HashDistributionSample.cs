@@ -18,6 +18,7 @@ namespace MyDataStructure.Hash
             foreach (var item in productIds)
             {
                 int hash = this.HashFunction(item);
+                //int hash = this.DefaultHashFunction(item);
 
                 int queueId = hash % numberOfQueues;
                 
@@ -31,11 +32,50 @@ namespace MyDataStructure.Hash
                         break;
                     case 2:
                         queue3.Add(item);
-                        break;                        
+                        break;          
+                    default:
+                        throw new System.Exception("No queue defined");
                 }
             }
 
-            return string.Format("queue1:{0}, queue2{1}, queue3{2}", 
+            return string.Format("{0}, {1}, {2}", 
+                        queue1.Count.ToString(),
+                        queue2.Count.ToString(),
+                        queue3.Count.ToString());
+        }
+
+        public string Process(List<string> productIds)
+        {
+            List<int> distribCount = new List<int>();
+
+            queue1 = new List<string>();
+            queue2 = new List<string>();
+            queue3 = new List<string>();
+
+            foreach (var item in productIds)
+            {
+                int hash = this.HashFunction(item);
+                //int hash = this.DefaultHashFunction(item);
+
+                int queueId = hash % numberOfQueues;
+                
+                switch (queueId)
+                {
+                    case 0:
+                        queue1.Add(item);
+                        break;
+                    case 1:
+                        queue2.Add(item);
+                        break;
+                    case 2:
+                        queue3.Add(item);
+                        break;          
+                    default:
+                        throw new System.Exception("No queue defined");
+                }
+            }
+
+            return string.Format("{0}, {1}, {2}", 
                         queue1.Count.ToString(),
                         queue2.Count.ToString(),
                         queue3.Count.ToString());
@@ -52,6 +92,13 @@ namespace MyDataStructure.Hash
                 index = index * 31 + asciiVal;
             }
             return index;
+        }
+
+        private int DefaultHashFunction(object key)
+        {
+            var hash = key.ToString().GetHashCode();
+            //key
+            return (int)hash;
         }
         
     }
