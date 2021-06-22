@@ -7,55 +7,18 @@ namespace MyDataStructure.Hash
         private const int numberOfQueues = 3;
         List<string> queue1, queue2, queue3;
 
-        public string Process(List<string> productIds)
+        public string Process(List<string> productIds, bool defaultHashFunction)
         {
-            List<int> distribCount = new List<int>();
-
             queue1 = new List<string>();
             queue2 = new List<string>();
             queue3 = new List<string>();
 
             foreach (var item in productIds)
             {
-                int hash = this.HashFunction(item);
-                //int hash = this.DefaultHashFunction(item);
-
-                int queueId = hash % numberOfQueues;
+                int hash;
                 
-                switch (queueId)
-                {
-                    case 0:
-                        queue1.Add(item);
-                        break;
-                    case 1:
-                        queue2.Add(item);
-                        break;
-                    case 2:
-                        queue3.Add(item);
-                        break;          
-                    default:
-                        throw new System.Exception("No queue defined");
-                }
-            }
-
-            return string.Format("{0}, {1}, {2}", 
-                        queue1.Count.ToString(),
-                        queue2.Count.ToString(),
-                        queue3.Count.ToString());
-        }
-
-        public string Process(List<string> productIds)
-        {
-            List<int> distribCount = new List<int>();
-
-            queue1 = new List<string>();
-            queue2 = new List<string>();
-            queue3 = new List<string>();
-
-            foreach (var item in productIds)
-            {
-                int hash = this.HashFunction(item);
-                //int hash = this.DefaultHashFunction(item);
+                if (defaultHashFunction) hash = this.DefaultHashFunction(item);
+                else hash = this.HashFunction(item);
 
                 int queueId = hash % numberOfQueues;
                 
@@ -94,11 +57,14 @@ namespace MyDataStructure.Hash
             return index;
         }
 
+        //
+        // Reference: https://andrewlock.net/why-is-string-gethashcode-different-each-time-i-run-my-program-in-net-core/
         private int DefaultHashFunction(object key)
         {
-            var hash = key.ToString().GetHashCode();
-            //key
-            return (int)hash;
+            var hash = (int)(key.ToString().GetHashCode());
+
+            if (hash < 0) return hash * -1;
+            else return hash;
         }
         
     }

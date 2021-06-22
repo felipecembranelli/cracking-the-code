@@ -22,6 +22,7 @@ https://www.dotnetlovers.com/Article/145/implementation-and-analysis-of-linked-l
 
 - Sample implementation of Hash table
 - Sample use of .NET framework Hashtable class
+- Sample use of hash to distribute a list of products evenly
 ## Reference
 
 https://referencesource.microsoft.com/#mscorlib/system/collections/hashtable.cs

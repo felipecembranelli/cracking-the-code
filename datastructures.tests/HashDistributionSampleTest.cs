@@ -7,8 +7,20 @@ namespace datastructure.tests
     public class HashDistributionSampleTest
     {
         [Fact]
-        public void Test()
+        public void Distribute_products_using_default_hash_should_return_distributed_list()
         {
+            this.ProcessTest(true);
+        }
+
+        [Fact]
+        public void Distribute_products_using_custom_hash_should_return_distributed_list()
+        {
+            this.ProcessTest(false);
+        }
+
+        private void ProcessTest(bool defaultHashFunction)
+        {
+
             // arrange
             HashDistributionSample hashSample = new HashDistributionSample();
 
@@ -17,7 +29,7 @@ namespace datastructure.tests
             List<string> products = this.GenerateProductList(numberOfItems);
 
             // act
-            var result = hashSample.Process(products);
+            var result = hashSample.Process(products, defaultHashFunction);
 
             // assert
             System.Console.WriteLine(result);
