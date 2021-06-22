@@ -33,6 +33,11 @@ https://www.dotnetlovers.com/article/147/implementation-of-hashtable-and-analysi
 
 https://www.tutorialsteacher.com/csharp/csharp-hashtable
 
+## Matrix
+
+## Reference
+https://docs.microsoft.com/en-us/dotnet/api/system.array.getupperbound?redirectedfrom=MSDN&view=net-5.0#System_Array_GetUpperBound_System_Int32_
+
 # Algo
 
 https://www.dotnetlovers.com/Search/Index?searchString=&tags=&search=1&sortBy=1&date=1&questionsBy=1&category=110&page=1
