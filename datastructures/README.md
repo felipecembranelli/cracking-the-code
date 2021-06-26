@@ -33,10 +33,21 @@ https://www.dotnetlovers.com/article/147/implementation-of-hashtable-and-analysi
 
 https://www.tutorialsteacher.com/csharp/csharp-hashtable
 
-## Matrix
+## Matrix / Arrays
+
+- Sample use of matrix 1 dimension
+- Sample use of matrix 2 dimension
+- Matrix operations 
+https://www.csharpstar.com/create-matrix-and-different-matrix-operations-in-csharp/
+- Jagged Array
+https://www.tutorialsteacher.com/csharp/csharp-jagged-array
+- Main Methods
+https://docs.microsoft.com/en-us/dotnet/api/system.array.foreach?view=net-5.0
 
 ## Reference
 https://docs.microsoft.com/en-us/dotnet/api/system.array.getupperbound?redirectedfrom=MSDN&view=net-5.0#System_Array_GetUpperBound_System_Int32_
+https://www.tutorialsteacher.com/csharp/csharp-multi-dimensional-array
+
 
 # Algo
 
