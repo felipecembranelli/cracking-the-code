@@ -55,6 +55,12 @@ https://www.tutorialsteacher.com/csharp/csharp-multi-dimensional-array
 ### References
 https://stackoverflow.com/questions/3564906/how-the-stringbuilder-class-is-implemented-does-it-internally-create-new-string
 
+## Stack
+
+- Sample implementation of stack, based on the link below:
+
+### References
+https://cis300.cs.ksu.edu/stacks-queues/stack-impl/
 
 # Algo
 
