@@ -4,7 +4,7 @@
 - Sample implementation of LindkedList
 - Sample implementation of LindkedList using generic type
 - Sample use of .NET framework LindkedList class
-## References
+### References
 
 [Collections and Data Structures](https://docs.microsoft.com/en-us/dotnet/standard/collections/)
 
@@ -23,7 +23,7 @@ https://www.dotnetlovers.com/Article/145/implementation-and-analysis-of-linked-l
 - Sample implementation of Hash table
 - Sample use of .NET framework Hashtable class
 - Sample use of hash to distribute a list of products evenly
-## Reference
+### References
 
 https://referencesource.microsoft.com/#mscorlib/system/collections/hashtable.cs
 
@@ -44,7 +44,7 @@ https://www.tutorialsteacher.com/csharp/csharp-jagged-array
 - Main Methods
 https://docs.microsoft.com/en-us/dotnet/api/system.array.foreach?view=net-5.0
 
-## Reference
+### References
 https://docs.microsoft.com/en-us/dotnet/api/system.array.getupperbound?redirectedfrom=MSDN&view=net-5.0#System_Array_GetUpperBound_System_Int32_
 https://www.tutorialsteacher.com/csharp/csharp-multi-dimensional-array
 
@@ -52,6 +52,7 @@ https://www.tutorialsteacher.com/csharp/csharp-multi-dimensional-array
 
 - Sample implementation of String Builder, based on the sample below:
 
+### References
 https://stackoverflow.com/questions/3564906/how-the-stringbuilder-class-is-implemented-does-it-internally-create-new-string
 
 
