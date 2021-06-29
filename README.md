@@ -1,4 +1,4 @@
-# Data structures using C#
+# Data structures and algorithms using C#
 ## Linked List
 
 - Sample implementation of LindkedList
@@ -61,6 +61,15 @@ https://stackoverflow.com/questions/3564906/how-the-stringbuilder-class-is-imple
 
 ### References
 https://cis300.cs.ksu.edu/stacks-queues/stack-impl/
+
+
+## Queue
+
+- Sample implementation of queue, based on the link below:
+
+### References
+https://cis300.cs.ksu.edu/stacks-queues/queues/
+
 
 # Algo
 
